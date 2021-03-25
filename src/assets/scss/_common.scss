@@ -1,4 +1,8 @@
+
 @charset "UTF-8";
+@import "./var";
+
+
 a,
 abbr,
 acronym,
@@ -100,6 +104,7 @@ nav,
 section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
@@ -168,7 +173,7 @@ body {
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  color: #828c96;
+  color: $color-grey-2;
   overflow-x: hidden;
 }
 @media screen and (max-width: 420px) {
@@ -216,7 +221,7 @@ table {
   word-break: break-all;
 }
 a {
-  color: #072142;
+  color: $color-darkblue;
   text-decoration: none;
 }
 a:hover {
@@ -238,7 +243,7 @@ img {
   width: 100%;
 }
 .title {
-  color: #fff;
+  color: $color-white;
   position: absolute;
   overflow: hidden;
   top: 50%;
@@ -309,7 +314,7 @@ img {
   width: 88px;
   height: 4px;
   border-radius: 5px;
-  background: #ff4d5a;
+  background: $color-red-2;
 }
 .title .border span:first-child {
   margin-bottom: 1.4rem;
@@ -324,6 +329,7 @@ img {
     width: 70px;
   }
 }
+
 @media screen and (max-width: 420px) {
   .title .border span {
     width: 44px;
@@ -344,7 +350,7 @@ img {
   }
 }
 .title__lead {
-  color: #fff;
+  color: $color-white;
   font-size: 2.8rem;
   line-height: 1.5;
   letter-spacing: 0.1em;
@@ -384,7 +390,7 @@ img {
   margin-right: 0;
 }
 .title li a {
-  color: #fff;
+  color: $color-white;
   font-size: 2.8rem;
   line-height: 1.5;
   letter-spacing: 0.1em;
@@ -409,8 +415,8 @@ img {
 .btn {
   display: inline-block;
   font-size: 1.8rem;
-  color: #fff;
-  background: #ff4d5a;
+  color: $color-white;
+  background: $color-red-2;
   line-height: 1;
   font-weight: bold;
   padding: 18px 32px;
@@ -460,14 +466,14 @@ img {
   -webkit-writing-mode: vertical-rl;
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
-  color: #fff;
+  color: $color-white;
   z-index: 100;
 }
 .scrollDown:after {
   content: "";
   width: 2px;
   height: 64px;
-  background: #fff;
+  background: $color-white;
   position: absolute;
   left: 0;
   right: 0;
@@ -513,7 +519,7 @@ img {
 }
 .heading {
   font-size: 4rem;
-  color: #072142;
+  color: $color-darkblue;
   letter-spacing: 0.2em;
   font-family: "futura_m";
   margin-right: 3.2rem;
@@ -541,7 +547,7 @@ img {
 }
 .heading-num {
   font-size: 4rem;
-  color: #ff4d5a;
+  color: $color-red-2;
   position: relative;
   padding-left: 6.2rem;
   padding-right: 3.2rem;
@@ -552,7 +558,7 @@ img {
   content: "";
   width: 4.8rem;
   height: 2px;
-  background: #020b16;
+  background: $color-dark-1;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -573,7 +579,7 @@ img {
 .sub-title {
   font-size: 3.2rem;
   margin-bottom: 1.6rem;
-  color: #072142;
+  color: $color-darkblue;
   text-align: center;
   letter-spacing: 0.2em;
   line-height: 1.2;
@@ -588,7 +594,7 @@ img {
 }
 .small-title {
   font-size: 2.4rem;
-  color: #072142;
+  color: $color-darkblue;
   letter-spacing: 0.2em;
   line-height: 1.2;
   font-family: "futura_de";
@@ -623,7 +629,7 @@ img {
   -o-transition: 0.5s;
   transition: 0.5s;
   overflow: hidden;
-  color: #fff;
+  color: $color-white;
   z-index: 300;
 }
 @media screen and (max-width: 420px) {
@@ -641,14 +647,14 @@ img {
   stroke: currentColor;
 }
 .back-arrow.js-color {
-  color: #020b16;
+  color: $color-dark-1;
 }
 .page-top {
   width: 100%;
   height: 100vh;
   position: relative;
-  color: #fff;
-  background: #020b16;
+  color: $color-white;
+  background: $color-dark-1;
 }
 @media screen and (max-width: 420px) {
   .page-top {
@@ -688,11 +694,11 @@ img {
   }
 }
 .page-top .image__reile {
-  background: url(../img/reile.jpg) no-repeat center;
+  background: $background-project-1-page ;
   background-size: cover;
 }
 .page-top .image__about {
-  background: url(../img/about.jpg) no-repeat center;
+  background: $background-about-page;
   background-size: cover;
 }
 .text {
@@ -794,7 +800,7 @@ img {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: #020b16;
+  background: $color-dark-1;
   z-index: 99999;
   -webkit-transform: translate3d(0, 100%, 0);
   transform: translate3d(0, 100%, 0);
@@ -803,7 +809,7 @@ img {
   position: fixed;
   width: 100%;
   height: 100%;
-  background: #020b16;
+  background: $color-dark-1;
   top: 0;
   left: 0;
 }
@@ -816,7 +822,7 @@ header {
   left: 0;
   width: 100%;
   padding: 40px 40px 0;
-  color: #fff;
+  color: $color-white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -831,14 +837,14 @@ header {
   }
 }
 header.js-color a {
-  color: #020b16;
+  color: $color-dark-1;
 }
 header.js-color .menuIcon:after,
 header.js-color .menuIcon:before {
-  background: #020b16;
+  background: $color-dark-1;
 }
 header a {
-  color: #fff;
+  color: $color-white;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -898,7 +904,7 @@ header .menuIcon:before {
   content: "";
   width: 100%;
   height: 3px;
-  background: #fff;
+  background: $color-white;
   position: absolute;
   right: 0;
   -webkit-transition: 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
@@ -926,18 +932,18 @@ header .global-nav {
     linear,
     left top,
     right top,
-    from(#072142),
-    color-stop(42%, #8c2b7a),
-    to(#ff4d5a)
+    from($color-darkblue),
+    color-stop(42%, $color-purple-1),
+    to($color-red-2)
   );
   background-image: -webkit-linear-gradient(
     left,
-    #072142,
-    #8c2b7a 42%,
-    #ff4d5a
+    $color-darkblue,
+    $color-purple-1 42%,
+    $color-red-2
   );
-  background-image: -o-linear-gradient(left, #072142, #8c2b7a 42%, #ff4d5a);
-  background-image: linear-gradient(to right, #072142, #8c2b7a 42%, #ff4d5a);
+  background-image: -o-linear-gradient(left, $color-darkblue, $color-purple-1 42%, $color-red-2);
+  background-image: linear-gradient(to right, $color-darkblue, $color-purple-1 42%, $color-red-2);
   width: 100%;
   height: 100vh;
   position: fixed;
@@ -987,7 +993,7 @@ header .global-nav__list li:first-child {
 }
 header .global-nav__list a {
   display: inline-block;
-  color: #fff;
+  color: $color-white;
   font-size: 7rem;
   line-height: 1;
   letter-spacing: 0.1em;
@@ -1045,35 +1051,35 @@ header .global-nav__sns a:last-child {
     linear,
     left top,
     left bottom,
-    from(#072142),
-    color-stop(#061c37),
-    color-stop(#07182b),
-    color-stop(#061220),
-    to(#020b16)
+    from($color-darkblue),
+    color-stop($color-darkblue-1),
+    color-stop($color-darkblue-2),
+    color-stop($color-darkblue-3),
+    to($color-dark-1)
   );
   background-image: -webkit-linear-gradient(
     top,
-    #072142,
-    #061c37,
-    #07182b,
-    #061220,
-    #020b16
+    $color-darkblue,
+    $color-darkblue-1,
+    $color-darkblue-2,
+    $color-darkblue-3,
+    $color-dark-1
   );
   background-image: -o-linear-gradient(
     top,
-    #072142,
-    #061c37,
-    #07182b,
-    #061220,
-    #020b16
+    $color-darkblue,
+    $color-darkblue-1,
+    $color-darkblue-2,
+    $color-darkblue-3,
+    $color-dark-1
   );
   background-image: linear-gradient(
     to bottom,
-    #072142,
-    #061c37,
-    #07182b,
-    #061220,
-    #020b16
+    $color-darkblue,
+    $color-darkblue-1,
+    $color-darkblue-2,
+    $color-darkblue-3,
+    $color-dark-1
   );
   z-index: -200;
 }
@@ -1087,7 +1093,7 @@ header .global-nav__sns a:last-child {
   -ms-flex-align: center;
   align-items: center;
   position: relative;
-  color: #fff;
+  color: $color-white;
 }
 @media screen and (max-width: 420px) {
   .fullpage__slide {
@@ -1161,7 +1167,7 @@ header .global-nav__sns a:last-child {
 #fp-nav ul li a {
   width: 24px;
   height: 100%;
-  background: #fff;
+  background: $color-white;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -1245,7 +1251,7 @@ header .global-nav__sns a:last-child {
   font-size: 6.4rem;
   letter-spacing: 0.1em;
   text-shadow: 0 10px 15px rgba(2, 11, 22, 0.2);
-  color: #ff4d5a;
+  color: $color-red-2;
   font-family: "futura_b";
 }
 @media screen and (max-width: 800px) {
@@ -1333,19 +1339,19 @@ header .global-nav__sns a:last-child {
   height: 100%;
   top: 0;
   right: 0;
-  background: #ff4d5a;
+  background: $color-red-2;
   -webkit-transform: translate3d(100%, 0, 0);
   transform: translate3d(100%, 0, 0);
 }
 .image__cover:last-child {
-  background: #072142;
+  background: $color-darkblue;
 }
 .image--project--1 {
-  background: url(../img/backgroundProject/backgroundPRJ1.png) no-repeat center;
+  background: $background-project-1-home;
   background-size: cover;
 }
 .image--about {
-  background: url(../img/about.jpg) no-repeat center;
+  background: $background-project-1-home;
   background-size: cover;
 }
 .image--contact {
@@ -1358,7 +1364,7 @@ header .global-nav__sns a:last-child {
   right: -7.549%;
   bottom: 12.3762%;
   font-size: 15rem;
-  color: #fff;
+  color: $color-white;
   font-family: "Abril Fatface";
   z-index: 200;
 }
@@ -1488,7 +1494,7 @@ header .global-nav__sns a:last-child {
 .meta__back {
   width: 100%;
   height: 70rem;
-  background: #f2f4f5;
+  background: $color-white-light;
   position: absolute;
   top: 0;
   left: 0;
@@ -1565,7 +1571,7 @@ header .global-nav__sns a:last-child {
   }
 }
 .kamp {
-  background: #f2f4f5;
+  background: $color-white-light;
   padding-top: 20rem;
   margin-top: 14.4rem;
 }
@@ -1594,7 +1600,7 @@ header .global-nav__sns a:last-child {
 .back-btn {
   display: inline-block;
   font-size: 3.2rem;
-  color: #020b16;
+  color: $color-dark-1;
   letter-spacing: 0.2em;
   position: relative;
   -webkit-transition: 0.5s;
@@ -1614,7 +1620,7 @@ header .global-nav__sns a:last-child {
   content: "";
   width: 64px;
   height: 2px;
-  background: #020b16;
+  background: $color-dark-1;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -1634,7 +1640,7 @@ header .global-nav__sns a:last-child {
   content: "";
   width: 24px;
   height: 1px;
-  background: #020b16;
+  background: $color-dark-1;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -1681,7 +1687,7 @@ header .global-nav__sns a:last-child {
   }
 }
 .who__name {
-  color: #072142;
+  color: $color-darkblue;
   margin-bottom: 2.4rem;
 }
 @media screen and (max-width: 420px) {
@@ -1873,7 +1879,7 @@ header .global-nav__sns a:last-child {
 .skill-set__ratio {
   font-size: 1.6rem;
   line-height: 1.2;
-  color: #072142;
+  color: $color-darkblue;
 }
 @media screen and (max-width: 420px) {
   .skill-set__ratio {
@@ -1881,12 +1887,12 @@ header .global-nav__sns a:last-child {
   }
 }
 .skill-set__high {
-  color: #ff4d5a;
+  color: $color-red-2;
 }
 .skill-set__bar {
   width: 100%;
   height: 1.4rem;
-  background: #fff;
+  background: $color-white;
   position: relative;
   border-radius: 10px;
   -webkit-box-shadow: 0 5px 15px 0 rgba(7, 33, 66, 0.15);
@@ -1911,18 +1917,18 @@ header .global-nav__sns a:last-child {
     linear,
     left top,
     right top,
-    from(#072142),
-    color-stop(42%, #8c2b7a),
-    to(#ff4d5a)
+    from($color-darkblue),
+    color-stop(42%, $color-purple-1),
+    to($color-red-2)
   );
   background-image: -webkit-linear-gradient(
     left,
-    #072142,
-    #8c2b7a 42%,
-    #ff4d5a
+    $color-darkblue,
+    $color-purple-1 42%,
+    $color-red-2
   );
-  background-image: -o-linear-gradient(left, #072142, #8c2b7a 42%, #ff4d5a);
-  background-image: linear-gradient(to right, #072142, #8c2b7a 42%, #ff4d5a);
+  background-image: -o-linear-gradient(left, $color-darkblue, $color-purple-1 42%, $color-red-2);
+  background-image: linear-gradient(to right, $color-darkblue, $color-purple-1 42%, $color-red-2);
 }
 .skill-set__bar.p90.in:after {
   -webkit-animation: ratio90 1.5s forwards;
@@ -1933,18 +1939,18 @@ header .global-nav__sns a:last-child {
     linear,
     left top,
     right top,
-    from(#072142),
-    color-stop(50%, #8c2b7a),
-    to(#ff4d5a)
+    from($color-darkblue),
+    color-stop(50%, $color-purple-1),
+    to($color-red-2)
   );
   background-image: -webkit-linear-gradient(
     left,
-    #072142,
-    #8c2b7a 50%,
-    #ff4d5a
+    $color-darkblue,
+    $color-purple-1 50%,
+    $color-red-2
   );
-  background-image: -o-linear-gradient(left, #072142, #8c2b7a 50%, #ff4d5a);
-  background-image: linear-gradient(to right, #072142, #8c2b7a 50%, #ff4d5a);
+  background-image: -o-linear-gradient(left, $color-darkblue, $color-purple-1 50%, $color-red-2);
+  background-image: linear-gradient(to right, $color-darkblue, $color-purple-1 50%, $color-red-2);
 }
 .skill-set__bar.p80.in:after {
   -webkit-animation: ratio80 1.5s forwards;
@@ -1955,18 +1961,18 @@ header .global-nav__sns a:last-child {
     linear,
     left top,
     right top,
-    from(#072142),
-    color-stop(65%, #8c2b7a),
-    to(#ff4d5a)
+    from($color-darkblue),
+    color-stop(65%, $color-purple-1),
+    to($color-red-2)
   );
   background-image: -webkit-linear-gradient(
     left,
-    #072142,
-    #8c2b7a 65%,
-    #ff4d5a
+    $color-darkblue,
+    $color-purple-1 65%,
+    $color-red-2
   );
-  background-image: -o-linear-gradient(left, #072142, #8c2b7a 65%, #ff4d5a);
-  background-image: linear-gradient(to right, #072142, #8c2b7a 65%, #ff4d5a);
+  background-image: -o-linear-gradient(left, $color-darkblue, $color-purple-1 65%, $color-red-2);
+  background-image: linear-gradient(to right, $color-darkblue, $color-purple-1 65%, $color-red-2);
 }
 .skill-set__bar.p70.in:after {
   -webkit-animation: ratio70 1.5s forwards;
@@ -1977,18 +1983,18 @@ header .global-nav__sns a:last-child {
     linear,
     left top,
     right top,
-    from(#072142),
-    color-stop(75%, #8c2b7a),
-    to(#ff4d5a)
+    from($color-darkblue),
+    color-stop(75%, $color-purple-1),
+    to($color-red-2)
   );
   background-image: -webkit-linear-gradient(
     left,
-    #072142,
-    #8c2b7a 75%,
-    #ff4d5a
+    $color-darkblue,
+    $color-purple-1 75%,
+    $color-red-2
   );
-  background-image: -o-linear-gradient(left, #072142, #8c2b7a 75%, #ff4d5a);
-  background-image: linear-gradient(to right, #072142, #8c2b7a 75%, #ff4d5a);
+  background-image: -o-linear-gradient(left, $color-darkblue, $color-purple-1 75%, $color-red-2);
+  background-image: linear-gradient(to right, $color-darkblue, $color-purple-1 75%, $color-red-2);
 }
 .skill-set__bar.p60.in:after {
   -webkit-animation: ratio60 1.5s forwards;
@@ -1999,12 +2005,12 @@ header .global-nav__sns a:last-child {
     linear,
     left top,
     right top,
-    from(#072142),
-    color-stop(65%, #8c2b7a)
+    from($color-darkblue),
+    color-stop(65%, $color-purple-1)
   );
-  background-image: -webkit-linear-gradient(left, #072142, #8c2b7a 65%);
-  background-image: -o-linear-gradient(left, #072142, #8c2b7a 65%);
-  background-image: linear-gradient(to right, #072142, #8c2b7a 65%);
+  background-image: -webkit-linear-gradient(left, $color-darkblue, $color-purple-1 65%);
+  background-image: -o-linear-gradient(left, $color-darkblue, $color-purple-1 65%);
+  background-image: linear-gradient(to right, $color-darkblue, $color-purple-1 65%);
 }
 .skill-set__bar.p50.in:after {
   -webkit-animation: ratio50 1.5s forwards;
@@ -2015,12 +2021,12 @@ header .global-nav__sns a:last-child {
     linear,
     left top,
     right top,
-    from(#072142),
-    color-stop(65%, #8c2b7a)
+    from($color-darkblue),
+    color-stop(65%, $color-purple-1)
   );
-  background-image: -webkit-linear-gradient(left, #072142, #8c2b7a 65%);
-  background-image: -o-linear-gradient(left, #072142, #8c2b7a 65%);
-  background-image: linear-gradient(to right, #072142, #8c2b7a 65%);
+  background-image: -webkit-linear-gradient(left, $color-darkblue, $color-purple-1 65%);
+  background-image: -o-linear-gradient(left, $color-darkblue, $color-purple-1 65%);
+  background-image: linear-gradient(to right, $color-darkblue, $color-purple-1 65%);
 }
 .skill-set__bar.p40.in:after {
   -webkit-animation: ratio40 1.5s forwards;
@@ -2032,12 +2038,12 @@ header .global-nav__sns a:last-child {
   text-align: center;
   background-image: -webkit-linear-gradient(
     349deg,
-    #072142,
-    #8c2b7a 52%,
-    #ff4d5a
+    $color-darkblue,
+    $color-purple-1 52%,
+    $color-red-2
   );
-  background-image: -o-linear-gradient(349deg, #072142, #8c2b7a 52%, #ff4d5a);
-  background-image: linear-gradient(101deg, #072142, #8c2b7a 52%, #ff4d5a);
+  background-image: -o-linear-gradient(349deg, $color-darkblue, $color-purple-1 52%, $color-red-2);
+  background-image: linear-gradient(101deg, $color-darkblue, $color-purple-1 52%, $color-red-2);
   position: relative;
   z-index: 100;
 }
@@ -2050,7 +2056,7 @@ header .global-nav__sns a:last-child {
   display: block;
   font-size: 2.8rem;
   line-height: 1.3;
-  color: #fff;
+  color: $color-white;
   letter-spacing: 0.2em;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
