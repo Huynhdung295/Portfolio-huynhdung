@@ -1351,11 +1351,11 @@ header .global-nav__sns a:last-child {
   background-size: cover;
 }
 .image--about {
-  background: $background-project-1-home;
+  background: $background-about-home;
   background-size: cover;
 }
 .image--contact {
-  background: url(../img/contact.jpg) no-repeat center;
+  background: $background-contact-home;
   background-size: cover;
 }
 .image .page-num {
@@ -1421,7 +1421,7 @@ header .global-nav__sns a:last-child {
   height: 100%;
 }
 .moonlight__img {
-  background: url(../img/moonlight.svg) no-repeat;
+  background: $background-home;
   background-size: 100%;
 }
 .moon-background {

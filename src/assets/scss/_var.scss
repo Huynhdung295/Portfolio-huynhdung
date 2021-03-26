@@ -2,12 +2,13 @@
 $color-white: #fff;
 $color-white-light: #f2f4f5;
 $color-grey-2:  #828c96;
+$color-grey: #333;
 $color-red-2: #ff4d5a;
-$color-darkblue:#072142;
-$color-darkblue-1:#061c37 ;
-$color-darkblue-2:#07182b ;
-$color-darkblue-3:#061220 ;
-$color-dark-1:#020b16;
+$color-darkblue: #FFD453;
+$color-darkblue-1:#FFCF4F ;
+$color-darkblue-2:#FFD147 ;
+$color-darkblue-3:#FDCD3D ;
+$color-dark-1:#FEC844;
 $color-purple-1:#8c2b7a;
 
 // Background Page
@@ -16,4 +17,6 @@ $background-about-page: url(../img/about.jpg) no-repeat center;
 
 // Background Home
 $background-project-1-home:url(../img/backgroundProject/backgroundPRJ1.png) no-repeat center;
-$background-about-home: url(../img/about.jpg) no-repeat center;
+$background-about-home: url(../img/backgroundAbout/AboutMe_1.jpg) no-repeat center;
+$background-contact-home: url(../img/contact.jpg) no-repeat center;
+$background-home: url(../img/moonlight.svg) no-repeat;

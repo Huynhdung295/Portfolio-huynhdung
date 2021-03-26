@@ -5,6 +5,7 @@
  *
  * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
  */
+ @import "./var";
  html.fp-enabled,
  .fp-enabled body {
      margin: 0;
@@ -51,10 +52,10 @@
      position: relative;
  }
  .fp-controlArrow {
-     -webkit-user-select: none; /* webkit (safari, chrome) browsers */
-     -moz-user-select: none; /* mozilla browsers */
-     -khtml-user-select: none; /* webkit (konqueror) browsers */
-     -ms-user-select: none; /* IE10+ */
+     user-select: none; /* webkit (safari, chrome) browsers */
+     user-select: none; /* mozilla browsers */
+     user-select: none; /* webkit (konqueror) browsers */
+     user-select: none; /* IE10+ */
      position: absolute;
      z-index: 4;
      top: 50%;
@@ -71,12 +72,12 @@
      left: 15px;
      width: 0;
      border-width: 38.5px 34px 38.5px 0;
-     border-color: transparent #fff transparent transparent;
+     border-color: transparent $color-white transparent transparent;
  }
  .fp-controlArrow.fp-next {
      right: 15px;
      border-width: 38.5px 0 38.5px 34px;
-     border-color: transparent transparent transparent #fff;
+     border-color: transparent transparent transparent $color-white;
  }
  .fp-scrollable {
      overflow: hidden;
@@ -98,7 +99,7 @@
      margin-top: -32px;
      top: 50%;
      opacity: 1;
-     -webkit-transform: translate3d(0,0,0);
+     transform: translate3d(0,0,0);
  }
  #fp-nav.right {
      right: 17px;
@@ -166,7 +167,7 @@
      height: 4px;
      width: 4px;
      border: 0;
-     background: #333;
+     background: $color-grey;
      left: 50%;
      top: 50%;
      margin: -2px 0 0 -2px;
@@ -184,7 +185,7 @@
  #fp-nav ul li .fp-tooltip {
      position: absolute;
      top: -2px;
-     color: #fff;
+     color: $color-white;
      font-size: 14px;
      font-family: arial, helvetica, sans-serif;
      white-space: nowrap;
