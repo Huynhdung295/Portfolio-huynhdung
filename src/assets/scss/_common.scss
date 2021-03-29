@@ -173,7 +173,7 @@ body {
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  color: $color-grey-2;
+  color: $color-3;
   overflow-x: hidden;
 }
 @media screen and (max-width: 420px) {
@@ -221,7 +221,7 @@ table {
   word-break: break-all;
 }
 a {
-  color: $color-darkblue;
+  color: $color-6;
   text-decoration: none;
 }
 a:hover {
@@ -243,10 +243,10 @@ img {
   width: 100%;
 }
 .title {
-  color: $color-white;
+  color: $color-1;
   position: absolute;
   overflow: hidden;
-  top: 50%;
+  top: 40%;
   -webkit-transform: translate3d(0, -50%, 0);
   transform: translate3d(0, -50%, 0);
   z-index: 200;
@@ -255,6 +255,7 @@ img {
 @media screen and (max-width: 800px) {
   .title {
     margin-left: 40px;
+    top:35%
   }
 }
 @media screen and (max-width: 420px) {
@@ -273,22 +274,22 @@ img {
   }
 }
 .title__text {
-  font-size: 12rem;
+  font-size: 8rem;
   line-height: 1;
   letter-spacing: 0.1em;
   margin-bottom: 1.6rem;
   font-family: "futura_m";
   font-weight: normal;
-  text-shadow: 0 10px 30px rgba(2, 11, 22, 0.5);
+  text-shadow: $shadow-text-0;
 }
 @media screen and (max-width: 800px) {
   .title__text {
-    font-size: 7.6rem;
+    font-size: 4.6rem;
   }
 }
 @media screen and (max-width: 420px) {
   .title__text {
-    font-size: 3.8rem;
+    font-size: 1.8rem;
     margin-bottom: 0.8rem;
     text-shadow: 0 3px 10px rgba(2, 11, 22, 0.5);
   }
@@ -296,13 +297,13 @@ img {
 @media screen and (max-width: 420px) {
   .title__text--top {
     font-size: 5.4rem;
-    text-shadow: 0 10px 30px rgba(2, 11, 22, 0.5);
+    text-shadow: $shadow-text-0;
     margin-bottom: 0.1rem;
   }
 }
 .title .border {
   display: inline-block;
-  margin-bottom: 3.2rem;
+  margin-bottom: 1.5rem;
 }
 @media screen and (max-width: 420px) {
   .title .border {
@@ -314,7 +315,7 @@ img {
   width: 88px;
   height: 4px;
   border-radius: 5px;
-  background: $color-red-2;
+  background: $color-5;
 }
 .title .border span:first-child {
   margin-bottom: 1.4rem;
@@ -350,8 +351,8 @@ img {
   }
 }
 .title__lead {
-  color: $color-white;
-  font-size: 2.8rem;
+  color: $color-12;
+  font-size: 2rem;
   line-height: 1.5;
   letter-spacing: 0.1em;
 }
@@ -390,7 +391,7 @@ img {
   margin-right: 0;
 }
 .title li a {
-  color: $color-white;
+  color: $color-12;
   font-size: 2.8rem;
   line-height: 1.5;
   letter-spacing: 0.1em;
@@ -415,8 +416,8 @@ img {
 .btn {
   display: inline-block;
   font-size: 1.8rem;
-  color: $color-white;
-  background: $color-red-2;
+  color: $color-1;
+  background: $color-5;
   line-height: 1;
   font-weight: bold;
   padding: 18px 32px;
@@ -466,14 +467,14 @@ img {
   -webkit-writing-mode: vertical-rl;
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
-  color: $color-white;
+  color: $color-1;
   z-index: 100;
 }
 .scrollDown:after {
   content: "";
   width: 2px;
   height: 64px;
-  background: $color-white;
+  background: $color-12;
   position: absolute;
   left: 0;
   right: 0;
@@ -519,7 +520,7 @@ img {
 }
 .heading {
   font-size: 4rem;
-  color: $color-darkblue;
+  color: $color-6;
   letter-spacing: 0.2em;
   font-family: "futura_m";
   margin-right: 3.2rem;
@@ -547,7 +548,7 @@ img {
 }
 .heading-num {
   font-size: 4rem;
-  color: $color-red-2;
+  color: $color-5;
   position: relative;
   padding-left: 6.2rem;
   padding-right: 3.2rem;
@@ -558,7 +559,7 @@ img {
   content: "";
   width: 4.8rem;
   height: 2px;
-  background: $color-dark-1;
+  background: $color-10;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -579,7 +580,7 @@ img {
 .sub-title {
   font-size: 3.2rem;
   margin-bottom: 1.6rem;
-  color: $color-darkblue;
+  color: $color-6;
   text-align: center;
   letter-spacing: 0.2em;
   line-height: 1.2;
@@ -594,7 +595,7 @@ img {
 }
 .small-title {
   font-size: 2.4rem;
-  color: $color-darkblue;
+  color: $color-6;
   letter-spacing: 0.2em;
   line-height: 1.2;
   font-family: "futura_de";
@@ -629,7 +630,7 @@ img {
   -o-transition: 0.5s;
   transition: 0.5s;
   overflow: hidden;
-  color: $color-white;
+  color: $color-1;
   z-index: 300;
 }
 @media screen and (max-width: 420px) {
@@ -647,14 +648,14 @@ img {
   stroke: currentColor;
 }
 .back-arrow.js-color {
-  color: $color-dark-1;
+  color: $color-10;
 }
 .page-top {
   width: 100%;
   height: 100vh;
   position: relative;
-  color: $color-white;
-  background: $color-dark-1;
+  color: $color-1;
+  background: $color-10;
 }
 @media screen and (max-width: 420px) {
   .page-top {
@@ -800,7 +801,7 @@ img {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: $color-dark-1;
+  background: $color-10;
   z-index: 99999;
   -webkit-transform: translate3d(0, 100%, 0);
   transform: translate3d(0, 100%, 0);
@@ -809,7 +810,7 @@ img {
   position: fixed;
   width: 100%;
   height: 100%;
-  background: $color-dark-1;
+  background: $color-10;
   top: 0;
   left: 0;
 }
@@ -822,7 +823,7 @@ header {
   left: 0;
   width: 100%;
   padding: 40px 40px 0;
-  color: $color-white;
+  color: $color-1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -837,14 +838,14 @@ header {
   }
 }
 header.js-color a {
-  color: $color-dark-1;
+  color: $color-10;
 }
 header.js-color .menuIcon:after,
 header.js-color .menuIcon:before {
-  background: $color-dark-1;
+  background: $color-10;
 }
 header a {
-  color: $color-white;
+  color: $color-12;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -904,7 +905,7 @@ header .menuIcon:before {
   content: "";
   width: 100%;
   height: 3px;
-  background: $color-white;
+  background: $color-12;
   position: absolute;
   right: 0;
   -webkit-transition: 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
@@ -932,18 +933,18 @@ header .global-nav {
     linear,
     left top,
     right top,
-    from($color-darkblue),
-    color-stop(42%, $color-purple-1),
-    to($color-red-2)
+    from($color-6),
+    color-stop(42%, $color-11),
+    to($color-5)
   );
   background-image: -webkit-linear-gradient(
     left,
-    $color-darkblue,
-    $color-purple-1 42%,
-    $color-red-2
+    $color-6,
+    $color-11 42%,
+    $color-5
   );
-  background-image: -o-linear-gradient(left, $color-darkblue, $color-purple-1 42%, $color-red-2);
-  background-image: linear-gradient(to right, $color-darkblue, $color-purple-1 42%, $color-red-2);
+  background-image: -o-linear-gradient(left, $color-6, $color-11 42%, $color-5);
+  background-image: linear-gradient(to right, $color-6, $color-11 42%, $color-5);
   width: 100%;
   height: 100vh;
   position: fixed;
@@ -993,7 +994,7 @@ header .global-nav__list li:first-child {
 }
 header .global-nav__list a {
   display: inline-block;
-  color: $color-white;
+  color: $color-12;
   font-size: 7rem;
   line-height: 1;
   letter-spacing: 0.1em;
@@ -1051,35 +1052,35 @@ header .global-nav__sns a:last-child {
     linear,
     left top,
     left bottom,
-    from($color-darkblue),
-    color-stop($color-darkblue-1),
-    color-stop($color-darkblue-2),
-    color-stop($color-darkblue-3),
-    to($color-dark-1)
+    from($color-6),
+    color-stop($color-7),
+    color-stop($color-8),
+    color-stop($color-9),
+    to($color-10)
   );
   background-image: -webkit-linear-gradient(
     top,
-    $color-darkblue,
-    $color-darkblue-1,
-    $color-darkblue-2,
-    $color-darkblue-3,
-    $color-dark-1
+    $color-6,
+    $color-7,
+    $color-8,
+    $color-9,
+    $color-10
   );
   background-image: -o-linear-gradient(
     top,
-    $color-darkblue,
-    $color-darkblue-1,
-    $color-darkblue-2,
-    $color-darkblue-3,
-    $color-dark-1
+    $color-6,
+    $color-7,
+    $color-8,
+    $color-9,
+    $color-10
   );
   background-image: linear-gradient(
     to bottom,
-    $color-darkblue,
-    $color-darkblue-1,
-    $color-darkblue-2,
-    $color-darkblue-3,
-    $color-dark-1
+    $color-6,
+    $color-7,
+    $color-8,
+    $color-9,
+    $color-10
   );
   z-index: -200;
 }
@@ -1093,7 +1094,7 @@ header .global-nav__sns a:last-child {
   -ms-flex-align: center;
   align-items: center;
   position: relative;
-  color: $color-white;
+  color: $color-1;
 }
 @media screen and (max-width: 420px) {
   .fullpage__slide {
@@ -1167,7 +1168,7 @@ header .global-nav__sns a:last-child {
 #fp-nav ul li a {
   width: 24px;
   height: 100%;
-  background: $color-white;
+  background: $color-12;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -1241,69 +1242,70 @@ header .global-nav__sns a:last-child {
     transform: translate3d(-50%, 0, 0);
   }
 }
-.moon__back {
+.boom__back {
   z-index: -100;
 }
-.moon__front {
+.boom__front {
   z-index: 200;
 }
 .moon__text {
-  font-size: 6.4rem;
+  font-size: 9.5rem;
   letter-spacing: 0.1em;
   text-shadow: 0 10px 15px rgba(2, 11, 22, 0.2);
-  color: $color-red-2;
+  color: $color-5;
   font-family: "futura_b";
 }
 @media screen and (max-width: 800px) {
   .moon__text {
-    font-size: 3.2rem;
+    font-size: 5.2rem;
   }
 }
 @media screen and (max-width: 420px) {
   .moon__text {
-    font-size: 2.4rem;
+    font-size: 5.4rem;
     text-shadow: 0 4px 6px rgba(2, 11, 22, 0.2);
   }
 }
 .moon__text-wrap {
   position: absolute;
-  left: -15.5963%;
-  top: 50%;
+  left: -131%;
+  top: 80%;
   -webkit-transform: translate3d(0, -50%, 0);
   transform: translate3d(0, -50%, 0);
 }
 .moon__img {
   position: relative;
-  width: 39.350180505%;
-  height: 39.350180505%;
+  width: 39%;
+  height: 39%;
 }
-.cloud {
+.boom {
   position: absolute;
+  right: 5%;
 }
-.cloud--front1 {
-  top: 20.55045%;
-  right: -49.357798%;
-  width: 88.44%;
+.boom--bang {
+  top: 20%;
+  right: -8%;
+  width: 30.44%;
 }
-.cloud--front2 {
-  bottom: -18.53211%;
-  right: -28.6238532%;
-  width: 87.155%;
+.boom--hello {
+  bottom: -10%;
+  right: -5%;
+  width: 34.155%;
 }
-.cloud--front3 {
-  bottom: -5.137614678%;
-  left: -49.357798%;
-  width: 87.155%;
+.boom--wow {
+  bottom: -0%;
+  left: -20%;
+  width: 40%;
 }
-.cloud--back1 {
-  top: -22.38532%;
-  right: -7.706422%;
-  width: 69.724%;
+.boom--yeah {
+  top: -12%;
+  right: 5%;
+  width: 39%;
 }
-.cloud--back2 {
-  top: -5.504587%;
-  left: -38.715596%;
-  width: 87.155%;
+.boom--cool {
+  top: -5%;
+  left: -38%;
+  width: 47.155%;
 }
 .image {
   display: block;
@@ -1339,12 +1341,12 @@ header .global-nav__sns a:last-child {
   height: 100%;
   top: 0;
   right: 0;
-  background: $color-red-2;
+  background: $color-5;
   -webkit-transform: translate3d(100%, 0, 0);
   transform: translate3d(100%, 0, 0);
 }
 .image__cover:last-child {
-  background: $color-darkblue;
+  background: $color-6;
 }
 .image--project--1 {
   background: $background-project-1-home;
@@ -1364,7 +1366,7 @@ header .global-nav__sns a:last-child {
   right: -7.549%;
   bottom: 12.3762%;
   font-size: 15rem;
-  color: $color-white;
+  color: $color-1;
   font-family: "Abril Fatface";
   z-index: 200;
 }
@@ -1381,65 +1383,16 @@ header .global-nav__sns a:last-child {
 }
 .image .page-num p {
   line-height: 1.1;
-  text-shadow: 0 10px 30px rgba(2, 11, 22, 0.5);
+  text-shadow: $shadow-text-0;
 }
 @media screen and (max-width: 420px) {
   .image .page-num p {
     text-shadow: 0 3px 10px rgba(2, 11, 22, 0.5);
   }
 }
-.moonlight {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 29.427%;
-  margin: auto;
-  height: 1385px;
-  width: 1385px;
-  z-index: -100;
-}
-@media screen and (max-width: 800px) {
-  .moonlight {
-    width: 100vw;
-    height: 100vw;
-    left: 23%;
-  }
-}
-@media screen and (max-width: 420px) {
-  .moonlight {
-    width: 165vw;
-    height: 165vw;
-    left: 50%;
-    top: -10rem;
-    bottom: auto;
-    -webkit-transform: translate3d(-50%, 0, 0);
-    transform: translate3d(-50%, 0, 0);
-  }
-}
-.moonlight__wrap {
-  width: 100%;
-  height: 100%;
-}
-.moonlight__img {
-  background: $background-home;
-  background-size: 100%;
-}
-.moon-background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  z-index: -100;
-}
-@media screen and (max-width: 420px) {
-  .moon-background {
-    height: 100%;
-    bottom: 0;
-    margin: auto;
-    max-height: 667px;
-  }
-}
+
+
+
 .star {
   width: 1300px;
   height: 100vh;
@@ -1494,7 +1447,7 @@ header .global-nav__sns a:last-child {
 .meta__back {
   width: 100%;
   height: 70rem;
-  background: $color-white-light;
+  background: $color-2;
   position: absolute;
   top: 0;
   left: 0;
@@ -1571,7 +1524,7 @@ header .global-nav__sns a:last-child {
   }
 }
 .kamp {
-  background: $color-white-light;
+  background: $color-2;
   padding-top: 20rem;
   margin-top: 14.4rem;
 }
@@ -1600,7 +1553,7 @@ header .global-nav__sns a:last-child {
 .back-btn {
   display: inline-block;
   font-size: 3.2rem;
-  color: $color-dark-1;
+  color: $color-10;
   letter-spacing: 0.2em;
   position: relative;
   -webkit-transition: 0.5s;
@@ -1620,7 +1573,7 @@ header .global-nav__sns a:last-child {
   content: "";
   width: 64px;
   height: 2px;
-  background: $color-dark-1;
+  background: $color-10;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -1640,7 +1593,7 @@ header .global-nav__sns a:last-child {
   content: "";
   width: 24px;
   height: 1px;
-  background: $color-dark-1;
+  background: $color-10;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -1687,7 +1640,7 @@ header .global-nav__sns a:last-child {
   }
 }
 .who__name {
-  color: $color-darkblue;
+  color: $color-6;
   margin-bottom: 2.4rem;
 }
 @media screen and (max-width: 420px) {
@@ -1879,7 +1832,7 @@ header .global-nav__sns a:last-child {
 .skill-set__ratio {
   font-size: 1.6rem;
   line-height: 1.2;
-  color: $color-darkblue;
+  color: $color-6;
 }
 @media screen and (max-width: 420px) {
   .skill-set__ratio {
@@ -1887,12 +1840,12 @@ header .global-nav__sns a:last-child {
   }
 }
 .skill-set__high {
-  color: $color-red-2;
+  color: $color-5;
 }
 .skill-set__bar {
   width: 100%;
   height: 1.4rem;
-  background: $color-white;
+  background: $color-1;
   position: relative;
   border-radius: 10px;
   -webkit-box-shadow: 0 5px 15px 0 rgba(7, 33, 66, 0.15);
@@ -1917,18 +1870,18 @@ header .global-nav__sns a:last-child {
     linear,
     left top,
     right top,
-    from($color-darkblue),
-    color-stop(42%, $color-purple-1),
-    to($color-red-2)
+    from($color-6),
+    color-stop(42%, $color-11),
+    to($color-5)
   );
   background-image: -webkit-linear-gradient(
     left,
-    $color-darkblue,
-    $color-purple-1 42%,
-    $color-red-2
+    $color-6,
+    $color-11 42%,
+    $color-5
   );
-  background-image: -o-linear-gradient(left, $color-darkblue, $color-purple-1 42%, $color-red-2);
-  background-image: linear-gradient(to right, $color-darkblue, $color-purple-1 42%, $color-red-2);
+  background-image: -o-linear-gradient(left, $color-6, $color-11 42%, $color-5);
+  background-image: linear-gradient(to right, $color-6, $color-11 42%, $color-5);
 }
 .skill-set__bar.p90.in:after {
   -webkit-animation: ratio90 1.5s forwards;
@@ -1939,18 +1892,18 @@ header .global-nav__sns a:last-child {
     linear,
     left top,
     right top,
-    from($color-darkblue),
-    color-stop(50%, $color-purple-1),
-    to($color-red-2)
+    from($color-6),
+    color-stop(50%, $color-11),
+    to($color-5)
   );
   background-image: -webkit-linear-gradient(
     left,
-    $color-darkblue,
-    $color-purple-1 50%,
-    $color-red-2
+    $color-6,
+    $color-11 50%,
+    $color-5
   );
-  background-image: -o-linear-gradient(left, $color-darkblue, $color-purple-1 50%, $color-red-2);
-  background-image: linear-gradient(to right, $color-darkblue, $color-purple-1 50%, $color-red-2);
+  background-image: -o-linear-gradient(left, $color-6, $color-11 50%, $color-5);
+  background-image: linear-gradient(to right, $color-6, $color-11 50%, $color-5);
 }
 .skill-set__bar.p80.in:after {
   -webkit-animation: ratio80 1.5s forwards;
@@ -1961,18 +1914,18 @@ header .global-nav__sns a:last-child {
     linear,
     left top,
     right top,
-    from($color-darkblue),
-    color-stop(65%, $color-purple-1),
-    to($color-red-2)
+    from($color-6),
+    color-stop(65%, $color-11),
+    to($color-5)
   );
   background-image: -webkit-linear-gradient(
     left,
-    $color-darkblue,
-    $color-purple-1 65%,
-    $color-red-2
+    $color-6,
+    $color-11 65%,
+    $color-5
   );
-  background-image: -o-linear-gradient(left, $color-darkblue, $color-purple-1 65%, $color-red-2);
-  background-image: linear-gradient(to right, $color-darkblue, $color-purple-1 65%, $color-red-2);
+  background-image: -o-linear-gradient(left, $color-6, $color-11 65%, $color-5);
+  background-image: linear-gradient(to right, $color-6, $color-11 65%, $color-5);
 }
 .skill-set__bar.p70.in:after {
   -webkit-animation: ratio70 1.5s forwards;
@@ -1983,18 +1936,18 @@ header .global-nav__sns a:last-child {
     linear,
     left top,
     right top,
-    from($color-darkblue),
-    color-stop(75%, $color-purple-1),
-    to($color-red-2)
+    from($color-6),
+    color-stop(75%, $color-11),
+    to($color-5)
   );
   background-image: -webkit-linear-gradient(
     left,
-    $color-darkblue,
-    $color-purple-1 75%,
-    $color-red-2
+    $color-6,
+    $color-11 75%,
+    $color-5
   );
-  background-image: -o-linear-gradient(left, $color-darkblue, $color-purple-1 75%, $color-red-2);
-  background-image: linear-gradient(to right, $color-darkblue, $color-purple-1 75%, $color-red-2);
+  background-image: -o-linear-gradient(left, $color-6, $color-11 75%, $color-5);
+  background-image: linear-gradient(to right, $color-6, $color-11 75%, $color-5);
 }
 .skill-set__bar.p60.in:after {
   -webkit-animation: ratio60 1.5s forwards;
@@ -2005,12 +1958,12 @@ header .global-nav__sns a:last-child {
     linear,
     left top,
     right top,
-    from($color-darkblue),
-    color-stop(65%, $color-purple-1)
+    from($color-6),
+    color-stop(65%, $color-11)
   );
-  background-image: -webkit-linear-gradient(left, $color-darkblue, $color-purple-1 65%);
-  background-image: -o-linear-gradient(left, $color-darkblue, $color-purple-1 65%);
-  background-image: linear-gradient(to right, $color-darkblue, $color-purple-1 65%);
+  background-image: -webkit-linear-gradient(left, $color-6, $color-11 65%);
+  background-image: -o-linear-gradient(left, $color-6, $color-11 65%);
+  background-image: linear-gradient(to right, $color-6, $color-11 65%);
 }
 .skill-set__bar.p50.in:after {
   -webkit-animation: ratio50 1.5s forwards;
@@ -2021,12 +1974,12 @@ header .global-nav__sns a:last-child {
     linear,
     left top,
     right top,
-    from($color-darkblue),
-    color-stop(65%, $color-purple-1)
+    from($color-6),
+    color-stop(65%, $color-11)
   );
-  background-image: -webkit-linear-gradient(left, $color-darkblue, $color-purple-1 65%);
-  background-image: -o-linear-gradient(left, $color-darkblue, $color-purple-1 65%);
-  background-image: linear-gradient(to right, $color-darkblue, $color-purple-1 65%);
+  background-image: -webkit-linear-gradient(left, $color-6, $color-11 65%);
+  background-image: -o-linear-gradient(left, $color-6, $color-11 65%);
+  background-image: linear-gradient(to right, $color-6, $color-11 65%);
 }
 .skill-set__bar.p40.in:after {
   -webkit-animation: ratio40 1.5s forwards;
@@ -2038,12 +1991,12 @@ header .global-nav__sns a:last-child {
   text-align: center;
   background-image: -webkit-linear-gradient(
     349deg,
-    $color-darkblue,
-    $color-purple-1 52%,
-    $color-red-2
+    $color-6,
+    $color-11 52%,
+    $color-5
   );
-  background-image: -o-linear-gradient(349deg, $color-darkblue, $color-purple-1 52%, $color-red-2);
-  background-image: linear-gradient(101deg, $color-darkblue, $color-purple-1 52%, $color-red-2);
+  background-image: -o-linear-gradient(349deg, $color-6, $color-11 52%, $color-5);
+  background-image: linear-gradient(101deg, $color-6, $color-11 52%, $color-5);
   position: relative;
   z-index: 100;
 }
@@ -2056,7 +2009,7 @@ header .global-nav__sns a:last-child {
   display: block;
   font-size: 2.8rem;
   line-height: 1.3;
-  color: $color-white;
+  color: $color-1;
   letter-spacing: 0.2em;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
