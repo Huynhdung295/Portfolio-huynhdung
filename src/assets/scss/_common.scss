@@ -467,7 +467,7 @@ img {
   -webkit-writing-mode: vertical-rl;
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
-  color: $color-1;
+  color: $color-12;
   z-index: 100;
 }
 .scrollDown:after {
@@ -520,7 +520,7 @@ img {
 }
 .heading {
   font-size: 4rem;
-  color: $color-6;
+  color: $color-12;
   letter-spacing: 0.2em;
   font-family: "futura_m";
   margin-right: 3.2rem;
@@ -580,7 +580,7 @@ img {
 .sub-title {
   font-size: 3.2rem;
   margin-bottom: 1.6rem;
-  color: $color-6;
+  color: $color-12;
   text-align: center;
   letter-spacing: 0.2em;
   line-height: 1.2;
@@ -595,7 +595,7 @@ img {
 }
 .small-title {
   font-size: 2.4rem;
-  color: $color-6;
+  color: $color-12;
   letter-spacing: 0.2em;
   line-height: 1.2;
   font-family: "futura_de";
@@ -838,11 +838,11 @@ header {
   }
 }
 header.js-color a {
-  color: $color-10;
+  color: $color-12;
 }
 header.js-color .menuIcon:after,
 header.js-color .menuIcon:before {
-  background: $color-10;
+  background: $color-12;
 }
 header a {
   color: $color-12;
@@ -933,18 +933,18 @@ header .global-nav {
     linear,
     left top,
     right top,
-    from($color-6),
-    color-stop(42%, $color-11),
-    to($color-5)
+    from($color-4),
+    color-stop(42%, $color-12),
+    to($color-4)
   );
   background-image: -webkit-linear-gradient(
     left,
-    $color-6,
-    $color-11 42%,
-    $color-5
+    $color-4,
+    $color-12 42%,
+    $color-4
   );
-  background-image: -o-linear-gradient(left, $color-6, $color-11 42%, $color-5);
-  background-image: linear-gradient(to right, $color-6, $color-11 42%, $color-5);
+  background-image: -o-linear-gradient(left, $color-4, $color-7 42%, $color-7);
+  background-image: linear-gradient(to right, $color-7, $color-4 42%, $color-7);
   width: 100%;
   height: 100vh;
   position: fixed;
@@ -1273,6 +1273,19 @@ header .global-nav__sns a:last-child {
   -webkit-transform: translate3d(0, -50%, 0);
   transform: translate3d(0, -50%, 0);
 }
+@media screen and (max-width: 800px) {
+.moon__text-wrap{
+top: 130%;
+left: -90%;
+}
+}
+@media screen and (max-width: 420px) {
+.moon__text-wrap{
+  top: 130%;
+  left: -90%;
+}
+  
+}
 .moon__img {
   position: relative;
   width: 39%;
@@ -1303,8 +1316,8 @@ header .global-nav__sns a:last-child {
   width: 39%;
 }
 .boom--cool {
-  top: -5%;
-  left: -38%;
+  top: -11%;
+  left: -30%;
   width: 47.155%;
 }
 .image {
@@ -1513,7 +1526,7 @@ header .global-nav__sns a:last-child {
 .big-image {
   width: 100%;
   height: 116rem;
-  background: url(../img/Perspective.jpg) no-repeat center;
+  background: $background-big;
   background-size: cover;
   margin-top: 14.4rem;
 }
@@ -1553,7 +1566,7 @@ header .global-nav__sns a:last-child {
 .back-btn {
   display: inline-block;
   font-size: 3.2rem;
-  color: $color-10;
+  color: $color-12;
   letter-spacing: 0.2em;
   position: relative;
   -webkit-transition: 0.5s;
@@ -1573,7 +1586,7 @@ header .global-nav__sns a:last-child {
   content: "";
   width: 64px;
   height: 2px;
-  background: $color-10;
+  background: $color-12;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -1640,7 +1653,7 @@ header .global-nav__sns a:last-child {
   }
 }
 .who__name {
-  color: $color-6;
+  color: $color-12;
   margin-bottom: 2.4rem;
 }
 @media screen and (max-width: 420px) {
@@ -1793,9 +1806,12 @@ header .global-nav__sns a:last-child {
   }
 }
 .skill-set__icon {
-  width: 10.6382%;
+  width: 11%;
   -ms-flex-item-align: center;
   align-self: center;
+ .bs{
+  transform: scale(1.6);
+ }
 }
 .skill-set__detail {
   width: 85.1063%;
@@ -1829,33 +1845,7 @@ header .global-nav__sns a:last-child {
     font-size: 1rem;
   }
 }
-.skill-set__ratio {
-  font-size: 1.6rem;
-  line-height: 1.2;
-  color: $color-6;
-}
-@media screen and (max-width: 420px) {
-  .skill-set__ratio {
-    font-size: 1rem;
-  }
-}
-.skill-set__high {
-  color: $color-5;
-}
-.skill-set__bar {
-  width: 100%;
-  height: 1.4rem;
-  background: $color-1;
-  position: relative;
-  border-radius: 10px;
-  -webkit-box-shadow: 0 5px 15px 0 rgba(7, 33, 66, 0.15);
-  box-shadow: 0 5px 15px 0 rgba(7, 33, 66, 0.15);
-}
-@media screen and (max-width: 420px) {
-  .skill-set__bar {
-    height: 0.7rem;
-  }
-}
+
 .skill-set__bar:after {
   content: "";
   position: absolute;
@@ -1996,7 +1986,7 @@ header .global-nav__sns a:last-child {
     $color-5
   );
   background-image: -o-linear-gradient(349deg, $color-6, $color-11 52%, $color-5);
-  background-image: linear-gradient(101deg, $color-6, $color-11 52%, $color-5);
+  background-image: linear-gradient(101deg, $color-4, $color-12 52%, $color-4);
   position: relative;
   z-index: 100;
 }
@@ -2009,7 +1999,7 @@ header .global-nav__sns a:last-child {
   display: block;
   font-size: 2.8rem;
   line-height: 1.3;
-  color: $color-1;
+  color: $color-6;
   letter-spacing: 0.2em;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;

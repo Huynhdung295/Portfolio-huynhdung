@@ -3,24 +3,26 @@ $color-1: #0211F6;
 $color-2: #f2f4f5;
 $color-3:  #828c96;
 $color-4: #333;
-$color-5: #ff4d5a;
+// 
+$color-5: #ED1B24;
 $color-6: #fff;
 $color-7:#fff ;
 $color-8:#fff ;
 $color-9:#fff ;
 $color-10:#fff;
 $color-11:#8c2b7a;
+// Màu theme
 $color-12: #000;
 
 // Background Page
-$background-project-1-page: url(../img/reile.jpg) no-repeat center;
-$background-about-page: url(../img/about.jpg) no-repeat center;
+$background-project-1-page: url(../img/imgPrj1/dsmovie.png) no-repeat right ;
+$background-about-page: url(../img/imgAbout/AboutMe.png) no-repeat center;
 
 // Background Home
-$background-project-1-home:url(../img/backgroundProject/backgroundPRJ1.png) no-repeat center;
-$background-about-home: url(../img/backgroundAbout/AboutMe_1.jpg) no-repeat center;
+$background-project-1-home:url(../img/imgPrj1/dsmovie.png) no-repeat ;
+$background-about-home: url(../img/imgAbout/AboutMe.png) no-repeat center;
 $background-contact-home: url(../img/contact.jpg) no-repeat center;
-
+$background-big: url(../img/imgPrj1/bigimg.png) no-repeat center;
 
 // Text-shadow
 $shadow-text-0:0 10px 30px rgba(2, 11, 22, 0.5);
