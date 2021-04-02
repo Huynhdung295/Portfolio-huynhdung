@@ -1281,8 +1281,9 @@ left: -90%;
 }
 @media screen and (max-width: 420px) {
 .moon__text-wrap{
-  top: 130%;
-  left: -90%;
+  top: 110%;
+  transform: scale(0.7);
+  left: -30%;
 }
   
 }
